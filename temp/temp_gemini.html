@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gemini
+        
+    </title>
+</head>
+
+<style>
+    body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: #232f3e;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 20px;
+  position: relative;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%; /* ड्रॉपडाउन को नेविगेशन आइटम के नीचे दिखाता है */
+  left: 0;
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: none; /* डिफ़ॉल्ट रूप से छिपा हुआ */
+  padding: 20px;
+  z-index: 10; /* यह सुनिश्चित करता है कि यह अन्य तत्वों के ऊपर दिखाई दे */
+  display: flex; /* आधुनिक लेआउट के लिए फ्लेक्सबॉक्स का उपयोग */
+}
+
+.nav-item:hover .dropdown {
+  display: flex; /* होवर करने पर ड्रॉपडाउन दिखाता है */
+}
+
+.dropdown-column {
+  margin-right: 30px;
+}
+
+.dropdown-column:last-child {
+  margin-right: 0;
+}
+
+.dropdown-column h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #0f1111;
+}
+
+.dropdown-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-column li {
+  margin-bottom: 5px;
+}
+
+.dropdown-column li a {
+  color: #007185;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+
+.dropdown-column li a:hover {
+  text-decoration: underline;
+  color: #c45500;
+}
+</style>
+<body>
+    
+<nav>
+    <ul class="navbar">
+      <li class="nav-item">
+        <a href="#">श्रेणियाँ</a>
+        <div class="dropdown">
+          <div class="dropdown-column">
+            <h3>इलेक्ट्रॉनिक्स</h3>
+            <ul>
+              <li><a href="#">मोबाइल फोन</a></li>
+              <li><a href="#">लैपटॉप</a></li>
+              <li><a href="#">टेलीविजन</a></li>
+              </ul>
+          </div>
+          <div class="dropdown-column">
+            <h3>किताबें</h3>
+            <ul>
+              <li><a href="#">उपन्यास</a></li>
+              <li><a href="#">गैर-उपन्यास</a></li>
+              <li><a href="#">बच्चों की किताबें</a></li>
+            </ul>
+          </div>
+          <div class="dropdown-column">
+            <h3>कपड़े</h3>
+            <ul>
+              <li><a href="#">पुरुषों के कपड़े</a></li>
+              <li><a href="#">महिलाओं के कपड़े</a></li>
+              <li><a href="#">बच्चों के कपड़े</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item"><a href="#">आज के सौदे</a></li>
+      <li class="nav-item"><a href="#">ग्राहक सेवा</a></li>
+    </ul>
+  </nav>
+    
+</body>
+</html>

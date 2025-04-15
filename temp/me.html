@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amazon Style Hamburger Menu</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #232f3e;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.hamburger {
+  font-size: 26px;
+  cursor: pointer;
+  display: block;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu ul {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.side-menu ul li {
+  margin: 15px 0;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #232f3e;
+  font-weight: bold;
+}
+
+.side-menu .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Open menu class */
+.side-menu.open {
+  left: 0;
+}
+
+/* Responsive for big screens
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .side-menu {
+    display: none;
+  }
+
+  .navbar {
+    /* justify-content: flex-start; */
+    /* gap: 20px;
+  }
+} */ */
+
+</style>
+<body>
+
+  <header class="navbar">
+    <div class="logo">🛒 Amazon</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <!-- Side Menu -->
+  <nav class="side-menu" id="sideMenu">
+    <div class="close-btn" id="closeBtn">&times;</div>
+    <ul>
+      <li><a href="#">All Categories</a></li>
+      <li><a href="#">Today's Deals</a></li>
+      <li><a href="#">Customer Service</a></li>
+      <li><a href="#">Gift Cards</a></li>
+      <li><a href="#">Sell</a></li>
+      <li><a href="#">Amazon Pay</a></li>
+    </ul>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

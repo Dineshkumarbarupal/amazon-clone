@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>See All / See Less Example</title>
+  <style>
+    .item {
+      display: none;
+    }
+    .item.visible {
+      display: block;
+    }
+    .see-toggle {
+      color: blue;
+      cursor: pointer;
+      margin-top: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <ul id="itemList">
+    <li class="item visible">Item 1</li>
+    <li class="item visible">Item 2</li>
+    <li class="item visible">Item 3</li>
+    <li class="item">Item 4</li>
+    <li class="item">Item 5</li>
+    <li class="item">Item 6</li>
+  </ul>
+
+  <span id="toggleButton" class="see-toggle">See All</span>
+
+  <script>
+    const toggleBtn = document.getElementById("toggleButton");
+    const items = document.querySelectorAll("#itemList .item");
+
+    let expanded = false;
+
+    toggleBtn.addEventListener("click", () => {
+      expanded = !expanded;
+
+      items.forEach((item, index) => {
+        if (expanded) {
+          item.classList.add("visible");
+        } else {
+          item.classList.toggle("visible", index < 3); // Only first 3 visible
+        }
+      });
+
+      toggleBtn.textContent = expanded ? "See Less" : "See All";
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amazon Style Dropdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #232f3e;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-right: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 100;
+  min-width: 600px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.dropdown-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.dropdown-column h4 {
+  margin-bottom: 10px;
+  color: #232f3e;
+}
+
+.dropdown-column a {
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.dropdown-column a:hover {
+  text-decoration: underline;
+}
+/* Inside .dropdown-menu */
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 30px; /* isko adjust karo jaha arrow dikhana ho */
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid white; /* dropdown ka background color */
+}
+
+
+</style>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">MyShop</div>
+    <ul class="nav-links">
+      <li class="dropdown">
+        <a href="#">All Categories</a>
+        <div class="dropdown-menu">
+          <div class="dropdown-column">
+            <h4>Electronics</h4>
+            <a href="#">Mobiles</a>
+            <a href="#">Laptops</a>
+            <a href="#">Cameras</a>
+            <a href="#">Accessories</a>
+          </div>
+          <div class="dropdown-column">
+            <h4>Fashion</h4>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Watches</a>
+          </div>
+          <div class="dropdown-column">
+            <h4>Home</h4>
+            <a href="#">Furniture</a>
+            <a href="#">Decor</a>
+            <a href="#">Kitchen</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="#">Today's Deals</a></li>
+      <li><a href="#">Customer Service</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
