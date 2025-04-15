@@ -6,6 +6,7 @@ body {
     font-family: "Amazon Ember", Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 :root {
@@ -826,7 +827,7 @@ body {
 .r_2 {
     border: 1px solid rgb(128, 127, 127);
     border: 1px solid rgb(128, 127, 127);
-    width: 89%;
+    width: 148px;
     margin: auto;
 }
 
@@ -908,6 +909,7 @@ body {
 .books_img {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .m_1_1 {
@@ -916,34 +918,38 @@ body {
 }
 
 .b_0 {
-    background-color: #ebe5e5;
-    height: 187px;
+    background-color: #ededed;
     position: relative;
+    width: 100%;
 }
 
 .b_1 {
-    width: 56%;
+    width: 45%;
 }
 
 .b_2_1 {
-    height: 100px;
-    width: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .b_2 {
-    max-width: 100%;
+    max-width: 76%;
     max-height: 100%;
 }
 
 .single {
     display: flex;
-    position: absolute;
-    top: 5px;
-    left: 281px;
+        /* position: absolute; */
+        top: 5px;
+        left: 185px;
+        width: 67%;
+        /* margin-left: 420px; */
+        /* margin: auto; */
+        height: 100%;
 }
 
 .v_1 {
-    height: 175px;
     background-color: #fff;
     margin-right: 6px;
 }
@@ -953,7 +959,7 @@ body {
 }
 
 .n_1 span {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 
@@ -966,9 +972,166 @@ body {
     background-position: -122px -801px;
     position: relative;
     bottom: 21px;
-    /* right: -47px; */
-    left: -69px;
+    left: 9px;
     top: 3px;
 }
+
+.ra_1 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.spd_1 {
+    font-size: 12px;
+    color: #888888;
+}
+
+.h_1_1 {
+    padding-left: 25px;
+    /* background-color: #eae8e8;  */
+}
+
+.ch_1 span {
+    font-size: 12px;
+}
+
+.biliyo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.maniyo {
+    height: 208px;
+    width: 30%;
+    text-align: center;
+    background: #f2efef;
+}
+
+
+._55_a {
+    position: absolute;
+    top: 0;
+    /* left: 108px; */
+    z-index: 1;
+    /* margin-top: -114px; */
+    height: 100%;
+    /* float: right; */
+    display: flex;
+    justify-content: end;
+   
+}
+
+.chimpali span {    
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.kitab {
+    width: 80%;
+    height: 88%;
+    margin-top: 13px;
+}
+
+.ayehaye2 {
+    background-image: url(amazon.png);
+    background-size: 350px;
+    height: 21px;
+    width: 25px;
+    float: left;
+    background-position: -175px -781px;
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+}
+
+.span_1 {
+    margin-left: 5px;
+}
+
+.c_1 {
+    line-height: 22px;
+    margin-left: 5px;
+    width: 70%;
+}
+
+.linkro1 a {
+    text-decoration: none;
+    color: #5caadb;
+    font-size: 12px;
+
+}
+
+.linkro a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #1a3154;
+    font-weight: 600;
+}
+
+.discount {
+    position: relative;
+}
+
+.discount::after {
+    content: "";
+    border: 1px solid;
+    right: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    
+}
+
+.price_main {
+    font-weight: 600;
+}
+
+.fs_12 {
+    font-size: 11px;
+    color: #525252;
+
+}
+
+.save {
+    background-color: #6cd26c;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.prime3 {
+    background-image: url(prime.png);
+    background-size: 350px;
+    height: 9px;
+    width: 40px;
+    float: left;
+    background-position: -122px -801px;
+    position: relative;
+    bottom: 21px;
+    /* left: 7px; */
+    top: 3px;
+}
+
+.bold_text {
+    font-weight: 600;
+}
+
+.te_1 {
+    margin-top: 9px;
+}
+
+.s_t_1 {
+    color: #2e8fc3;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+.deal {
+    padding: 5px;
+    background-color: #cc0c39;
+    color: #fff;
+}
+
 
 
