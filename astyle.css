@@ -525,7 +525,7 @@ body {
     color: #febd69;
     align-items: center;
     margin-top: 5px;
-    position: fixed;
+    position: absolute;
     margin-left: 19px;
 }
 
@@ -1188,6 +1188,60 @@ body {
     text-align: center;
     background: #f2efef;
 }
+.maniyo6 {
+    height: 237px;
+    width: 30%;
+    text-align: center;
+    background: #f2efef;
+}
+.maniyo7 {
+    height: 328px;
+    width: 30%;
+    text-align: center;
+    background: #f2efef;
+}
+.maniyo8 {
+    height: 166px;
+    width: 30%;
+    text-align: center;
+    background: #f2efef;
+}
+.maniyo9 {
+    height: 177px;
+    width: 30%;
+    text-align: center;
+    background: #f2efef;
+}
+.maniyo10 {
+    height: 250px;
+    width: 30%;
+    text-align: center;
+    background: #f2efef;
+}
+.maniyo11 {
+    height: 394px;
+    width: 30%;
+    text-align: center;
+    background: #f2efef;
+}
+.maniyo12 {
+    height: 300px;
+    width: 30%;
+    text-align: center;
+    background: #f2efef;
+}
+.maniyo13 {
+    height: 352px;
+    width: 30%;
+    text-align: center;
+    background: #f2efef;
+}
+.maniyo14 {
+    height: 393px;
+    width: 30%;
+    text-align: center;
+    background: #f2efef;
+}
 
 .kitab3 {
     width: 65%;
@@ -1204,6 +1258,54 @@ body {
     height: 48%;
     margin-top: 79px;
 }
+.kitab6 {
+    width: 65%;
+    height: 48%;
+    margin-top: 79px;
+}
+.kitab7 {
+    width: 65%;
+    height: 48%;
+    margin-top: 79px;
+}
+.kitab9 {
+    width: 57%;
+    height: 85%;
+    margin-top: 14px;
+
+}
+.kitab10 {
+    width: 57%;
+    height: 85%;
+    margin-top: 14px;
+
+}
+.kitab11 {
+    width: 57%;
+    height: 47%;
+    margin-top: 103px;
+
+}
+.kitab12 {
+    width: 57%;
+    height: 47%;
+    margin-top: 103px;
+
+}
+.kitab13 {
+    width: 57%;
+    height: 47%;
+    margin-top: 103px;
+
+}
+.kitab14 {
+    width: 57%;
+    height: 47%;
+    margin-top: 103px;
+
+}
+
+
 
 
 
@@ -1214,4 +1316,16 @@ body {
 
 .h2_1 {
     font-size: 10px;
+}
+
+
+.img_span {
+    width: 80px;
+    height: 16px;
+    position: absolute;
+    right: 346px;
+}
+
+.img {
+    max-width: 100%;
 }
