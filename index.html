@@ -3029,18 +3029,250 @@
                 </div>
 
                 <div>
-                    <span>Related searches</span>
+                    <span class="dpl">Related searches</span>
                 </div>
 
                 <div class="chirkali">
+                    <div class="anarkali">
+                        <i class="search2"></i>
+                        <span class="fs_12 spf">
+                            entrepreneur books
+                        </span>
+                    </div>
+                    <div class="anarkali">
+                        <i class="search2"></i>
+                        <span class="fs_12  spf">
+                            entrepreneur
+                        </span>
+                    </div>
+                    <div class="anarkali">
+                        <i class="search2 "></i>
+                        <span class="fs_12 spf">
+                            books for entrepreneurs
+                        </span>
+                    </div>
+                    <div class="anarkali">
+                        <i class="search2 "></i>
+                        <span class="fs_12 spf">
+                            
+                            business books
+                                                        
+                        </span>
+                    </div>
+
+                    <div class="anarkali">
+                        <i class="search2"></i>
+                        <span class="fs_12 spf">
+                            
+                            books on entrepreneurship
+                                                        
+                        </span>
+                    </div>
+
+                    <div class="anarkali">
+                        <i class="search2"></i>
+                        <span class="fs_12 spf">
+                            entrepreneur book
+                        </span>
+                    </div>
+
+
+                </div>
+
+
+                <div class="pg_div">
+                    <div class="pagination" id="pagination"></div>
+
+                </div>
+                <script>
+                    const totalPages = 20;
+                    let currentPage = 1;
                     
+                    function createPagination(current) {
+                    const pagination = document.getElementById('pagination');
+                    pagination.innerHTML = '';
+                    
+                    const addPage = (page, isActive = false) => {
+                        const link = document.createElement('a');
+                        link.textContent = page;
+                        if (isActive) link.classList.add('active');
+                        link.addEventListener('click', () => {
+                        currentPage = page;
+                        createPagination(currentPage);
+                        });
+                        pagination.appendChild(link);
+                    };
+                    
+                    const addDots = () => {
+                        const dots = document.createElement('a');
+                        dots.textContent = '...';
+                        dots.classList.add('disabled');
+                        pagination.appendChild(dots);
+                    };
+                    
+                    // Previous button
+                    const prev = document.createElement('a');
+                    prev.textContent = 'Previous';
+                    if (current > 1) {
+                        prev.addEventListener('click', () => {
+                        currentPage--;
+                        createPagination(currentPage);
+                        });
+                    } else {
+                        prev.classList.add('disabled');
+                    }
+                    pagination.appendChild(prev);
+                    
+                    // First page
+                    addPage(1, current === 1);
+                    
+                    if (current > 3) addDots();
+                    
+                    for (let i = current - 1; i <= current + 1; i++) {
+                        if (i > 1 && i < totalPages) {
+                        addPage(i, current === i);
+                        }
+                    }
+                    
+                    if (current < totalPages - 2) addDots();
+                    
+                    // Last page
+                    if (totalPages > 1) {
+                        addPage(totalPages, current === totalPages);
+                    }
+                    
+                    // Next button
+                    const next = document.createElement('a');
+                    next.textContent = 'Next';
+                    if (current < totalPages) {
+                        next.addEventListener('click', () => {
+                        currentPage++;
+                        createPagination(currentPage);
+                        });
+                    } else {
+                        next.classList.add('disabled');
+                    }
+                    pagination.appendChild(next);
+                    }
+                    
+                    createPagination(currentPage);
+                    </script>
+
+
+             
+
+            </div>
+        </div>
+        <div class="hr_line"></div>
+        
+        <div class="hooooooo">
+            <h2>See personalized recommendations</h2>
+            <div class="tuuuu">
+                <span class="sign_in_0 fs_12"><a href="">sign in</a></span>
+            </div>
+            <div>
+                <span class="fs_12">New customer? </span>
+                <span class="fs_12"><a href="">Start here</a></span>
+            </div>
+
+        </div>
+
+        <div class="hr_line"></div>
+
+    </main>
+
+    <footer>
+        <div class="ma_1">
+            <div class="ma_2 fs_12">
+                <a href="">Back to top</a>
+            </div>
+
+            <div class="ma_3">
+
+                <div class="mb_1">
+                    <div class="mb_2">
+                        <div>Get to Know Us</div>
+                        <div class="bale_bale fs_12">
+                            <ul>
+                                <li>
+                                    <a class="link_3" href="">About Amazon</a>
+                                </li>
+
+                                <li>
+                                    <a class="link_3" href="">Careers</a>
+                                </li>
+
+                                <li>
+                                    <a class="link_3" href="">Press Releases</a>
+                                </li>
+
+                                <li>
+                                    <a class="link_3" href="">Amazon Science</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mb_2">
+
+                        <div>Connect with Us</div>
+
+                        <div class="bale_bale fs_12">
+                            <ul>
+                                <li><a class="link_3" href="">Facebook</a></li>
+                                <li><a class="link_3" href="">Twitter</a></li>
+                                <li><a class="link_3" href="">Instagram</a></li>
+                            </ul>                            
+                        </div>
+
+                    </div>
+
+                    <div class="mb_2">
+
+                        <div>Make Money with Us</div>
+
+                        <div class="fs_12 bale_bale">
+                            <ul>
+                                <li><a class="link_3" href="">Sell on Amazon</a></li>
+                                <li><a class="link_3" href="">Sell under Amazon Accelerator</a></li>
+                                <li><a class="link_3" href="">Protect and Build Your Brand</a></li>
+                                <li><a class="link_3" href="">Amazon Global Selling</a></li>
+                                <li><a class="link_3" href="">Supply to Amazon</a></li>
+                                <li><a class="link_3" href="">Become an Affiliate</a></li>
+                                <li><a class="link_3" href="">Fulfilment by Amazon</a></li>
+                                <li><a class="link_3" href="">Advertise Your Products</a></li>
+                                <li><a class="link_3" href="">Amazon Pay on Merchants</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb_2">
+
+                        <div>Let Us Help You</div>
+
+                        <div class="bale_bale fs_12">
+                            <ul>
+                                <li><a class="link_3" href="">Your Account</a></li>
+                                <li><a class="link_3" href="">Returns Centre</a></li>
+                                <li><a class="link_3" href="">Recalls and Product Safety Alerts</a></li>
+                                <li><a class="link_3" href="">100% Purchase Protection</a></li>
+                                <li><a class="link_3" href="">Amazon App Download</a></li>
+                                <li><a class="link_3" href="">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hr_line2"></div>
+
+                <div class="kako">
 
                 </div>
 
             </div>
-        </div>
 
-    </main>
+        </div>
+    </footer>
     
 </body>
 </html>
