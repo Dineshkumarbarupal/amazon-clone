@@ -25,6 +25,17 @@ body {
     font-size: 9px;
 }
 
+@media screen and (max-width:450px) {
+    .fs {
+        font-size: 7px;
+    }
+
+    .fss {
+        font-size: 6px;
+    }
+    
+}
+
 .h_1_a {
     display: flex;
     flex-direction: row;
@@ -45,15 +56,30 @@ body {
     margin-left: 5px;
 }
 
+
+@media screen and (max-width:450px) {
+    .n_logo_h_w {
+        float: left;
+    text-indent: -500px;
+    background-position: 1px -55px;
+    width: 58px;
+    height: 19px;
+    margin-left: 5px;
+    }
+
+    .n_logo {
+        background-size: 227px;
+    }
+    
+}
+
 .nav_logo {
-        /* margin: 8px; */
-    /* height: auto; */
     top: 0px;
     bottom: 0;
     left: 0;
     display: flex;
     position: relative;
-
+    width: 50%;
 }
 
 .logo_margin {
@@ -120,7 +146,7 @@ body {
 
 @media screen and (min-width:1024px) {
     .input_div {
-        width: 760px;
+        width: 700px;
     }
     .input_1 {
         width: 100%;
@@ -143,6 +169,43 @@ body {
    
 }
 
+.ayehaye3 {
+    background-image: url(amazon.png);
+    background-size: 350px;
+    height: 21px;
+    width: 25px;
+    float: left;
+    background-position: -175px -781px;
+    position: relative;
+    left: -6px;
+    bottom: 2px;
+}
+
+.ayehaye4 {
+    background-image: url(amazon.png);
+    background-size: 350px;
+    height: 21px;
+    width: 25px;
+    float: left;
+    background-position: -175px -781px;
+    position: absolute;
+    left: 64px;
+    bottom: 2px;
+    top: 15px;
+}
+
+@media screen and (min-width:1000px) {
+     .ayehaye4 {
+        left: 110px;
+     }
+    
+}
+
+.h_1_e_1 {
+    display: inline-block;
+    margin-top: 17px;
+    height: 20px;
+}
 
 .h_1_d {
     display: flex;
@@ -153,8 +216,14 @@ body {
 
 .h_1_e {
     display: flex;
+    margin-top: 1px;
    
 }
+
+.h_1_c {
+    width: 50%;
+}
+
 /* 
 .h_1_a:hover {
     border: 1px solid rgb(187, 114, 51);
@@ -429,7 +498,7 @@ body {
     /* margin: 2px 0 */    /* agar ise laga diya to media quary se di hui margin ka nhi karegi*/
 }
 
-.j_2:hover {
+.h_1_f:hover {
     border: 1px solid #febd69;
 }
 
@@ -455,6 +524,9 @@ body {
 
 .h_1_f {
     display: flex;
+    position: relative;
+    margin-top: 1px;
+    border: 1px solid transparent;
 }
 
 .h_1_g {
@@ -465,8 +537,8 @@ body {
 .k_2 {
     display: flex;
     flex-direction: column;
-    /* margin:1px 0 1px 0; */
     border: 1px solid transparent;
+    margin-top: 1px;
 }
 
 .k_2:hover {
@@ -534,6 +606,10 @@ body {
     margin-left: 19px;
 }
 
+.nav_logo {
+    margin-left: 3px;
+}
+
 .nav_logo_a {
     margin: 1px;
     border: 1px solid transparent;
@@ -568,9 +644,13 @@ body {
 
 ._c_b {
     display: flex;
-    margin-top: 12px;
-    height: 25px;
-    /* padding: 10px; */
+    height: 41px;
+    margin-left: 10px;
+    border: 1px solid transparent;
+}
+
+._c_b2 {
+    margin: auto;
 }
 
 ._c_b:hover {
@@ -608,6 +688,7 @@ body {
     list-style-type: none;
     margin-left: 10px;
     margin-top: 15px;
+    border: 1px solid transparent;
   
     
 }
@@ -761,7 +842,7 @@ body {
    
     height: 1px;
     width: 100%;
-    background-color: #393737;
+    background-color: #d2d2d2;
     
 }
 
@@ -865,6 +946,7 @@ body {
 
 .s_t {
     color: #2e8fc3;
+    cursor: pointer;
 }
 
 .p_1 {
@@ -1178,15 +1260,24 @@ body {
     font-weight: 600;
 }
 
+
+@media screen and (min-width:1000px) {
+    .price_main {
+        font-size: 19px;
+        font-weight: 400;
+    }
+    
+}
+
 .fs_12 {
     font-size: 11px;
     color: #525252;
-
 }
 
+
+
 @media screen and (min-width:1000px) {
-    .fs_12 {font-size: 15px;}
-    
+    .fs_12 {font-size: 15px;}   
 }
 
 .save {
@@ -1480,10 +1571,6 @@ body {
 
 }
 
-
-
-
-
 .video_1 {
     width: 450px;
     height: 255px;
@@ -1493,12 +1580,16 @@ body {
     font-size: 10px;
 }
 
+.kind {
+    position: relative;
+}
+
 
 .img_span {
     width: 80px;
     height: 16px;
     position: absolute;
-    right: 346px;
+    left: 45px;
 }
 
 .img {
