@@ -1,4 +1,4 @@
-const hamburger = document.getElementById('_c_b');
+const hamburger = document.getElementById('Menu');
 const sideMenu = document.getElementById('sideMenu');
 const closeBtn = document.getElementById('closeBtn');
 
