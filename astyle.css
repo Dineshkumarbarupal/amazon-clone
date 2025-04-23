@@ -648,6 +648,7 @@ body {
     height: 41px;
     margin-left: 10px;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 
 ._c_b2 {
